@@ -1,4 +1,5 @@
-# Aula 01 
+# Programação Paralela Sem o Compartilhamento de Dados Aula 01 - Iniciando e Encerrando Threads
+
 *Lembrete:* .class é um arquivo java já compilado (bytecode)
 
 ### O que é thread?
@@ -10,13 +11,13 @@
 
 *Lembre da definição de processo de um sistema operacional, por exemplo*
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 ## Em Java
 é um objeto da classe ```java.lang.Thread```.
 Uma Thread possui um método ```run()```, que define o trabalho que será executado pela Thread. 
 Entretanto, a thread não vai rodar em paralelo a outras sem o comando ```Thread.start()``` que a inicializa, pois o run **não cria** uma nova thread.
-```python
+```java
 public class exemploBasico extends Thread {
     private boolean fim=false;
 
@@ -38,7 +39,7 @@ Definição de quando ela se encerra, ATENÇÃO isso não mata a thread apenas e
 
 ### Implementação 
 
-```python
+```java
 public class TarefaDoTipo3 extends Inutil implements Runnable
 {
 A instância dessa classe será a tarefa executada pela Thread
